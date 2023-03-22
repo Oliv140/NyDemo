@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrapper{
+        height: 200px;
+        width: 450px;
+        border: 1px solid black;
+        margin: auto;
+        padding: 4px;
+    }
+        #left{
+            width: 190px;
+            float: left;
+            border: 1px solid blue;
+            padding: 4px;
+        }
+        #left form input{
+            margin-bottom: 4px;
+        }
+        #right{
+            width: 198px;
+            float: left;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<h1> Hej</h1>
+    <div id="wrapper">
+       <div id = "left">
+           <form action="/personData" method="post">
+               <label>First name</label>
+               <input type="text" name="first_name" placeholder="First name">
+               <label>Last name</label>
+               <input type="text" name="last_name" placeholder="Last name">
+               <input type="submit" value="Send data" style="color: green">
+           </form>
+       </div>
+       <div id = "right">
+           <input type = "checkbox" name="vehicle 1" value="Bike">I have a bike<br>
+           <input type = "checkbox" name="vehicle 2" value="Car">I have a car<br>
+           <input type = "checkbox" name="vehicle 3" value="Boat" checked="checked">I have a bike<br>
+
+       </div>
+    </div>
+
+</body>
+</html>
